@@ -1,0 +1,11 @@
+---
+type Props = {
+  gapRem: number;
+};
+
+const { gapRem } = Astro.props;
+---
+
+<div style={`display: flex; flex-direction:column; gap: ${gapRem}rem`}>
+  <slot />
+</div>
