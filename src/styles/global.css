@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Italic.ttf') format('truetype');
+  font-style: italic;
+}
+
+* {
+  font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, sans-serif;
+}
