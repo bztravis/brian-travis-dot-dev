@@ -12,6 +12,7 @@
 
 * {
   font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, sans-serif;
+  box-sizing: border-box;
 }
 
 :root {
