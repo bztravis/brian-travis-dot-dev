@@ -1,8 +1,14 @@
 ---
-
+import Flex from './Flex.astro';
 ---
 
-<div id='container'>Hello world</div>
-<div id='container'><i>Hello world</i></div>
+<header>
+  <Flex direction='row' justify='space-between'>
+    <Flex gapRem={0.25}>
+      <h1>Brian Travis</h1>
+      <h3>Frontend engineering @ Ramp</h3>
+    </Flex>
 
-<style></style>
+    <img src='/images/avatar.png' alt='avatar' width='54' height='54' />
+  </Flex>
+</header>

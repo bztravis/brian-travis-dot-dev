@@ -1,0 +1,30 @@
+---
+type Props = {
+  direction?: 'row' | 'column';
+  gapRem?: number;
+  justify?:
+    | 'center'
+    | 'flex-start'
+    | 'flex-end'
+    | 'space-between'
+    | 'space-around'
+    | 'space-evenly';
+};
+
+const {
+  gapRem = 0,
+  direction = 'column',
+  justify = 'flex-start',
+} = Astro.props;
+---
+
+<div
+  style={{
+    display: 'flex',
+    flexDirection: direction,
+    gap: `${gapRem}rem`,
+    justifyContent: justify,
+  }}
+>
+  <slot />
+</div>
