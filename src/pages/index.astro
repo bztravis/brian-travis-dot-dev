@@ -1,11 +1,16 @@
 ---
 import Header from '../components/Header.astro';
-import Flex from '../components/Flex.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import IndexLayout from '../layouts/IndexLayout.astro';
+import SocialLinks from '../components/SocialLinks.astro';
 ---
 
 <BaseLayout>
-  <Flex gapRem={2}>
+  <IndexLayout>
     <Header />
-  </Flex>
+
+    <p>Hello world!</p>
+
+    <SocialLinks />
+  </IndexLayout>
 </BaseLayout>

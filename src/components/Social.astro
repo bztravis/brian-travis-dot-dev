@@ -1,0 +1,23 @@
+---
+type Props = {
+  href: string;
+};
+
+const { href } = Astro.props;
+---
+
+<a class='Social_container' href={href} target='_blank'>
+  <slot />
+</a>
+
+<style>
+  .Social_container {
+    flex-grow: 1;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.375rem;
+    background: var(--box);
+  }
+</style>

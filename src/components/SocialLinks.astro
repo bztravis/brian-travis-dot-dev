@@ -1,0 +1,29 @@
+---
+import Flex from './Flex.astro';
+import Social from './Social.astro';
+
+import linkedin from '../assets/linkedin.svg';
+import x from '../assets/x.svg';
+import github from '../assets/github.svg';
+import photography from '../assets/photography.png';
+---
+
+<Flex direction='row' gapRem={1 / 4} justify='space-between'>
+  <Social href='https://www.linkedin.com/in/brian-z-travis/'>
+    <img src={linkedin.src} alt='LinkedIn' width={24} height={24} />
+  </Social>
+  <Social href='https://x.com/_briantravis'>
+    <img src={x.src} alt='X' width={24} height={24} />
+  </Social>
+  <Social href='https://github.com/bztravis'>
+    <img src={github.src} alt='GitHub' width={24} height={24} />
+  </Social>
+  <Social href='https://x.com/_briantravis'>
+    <img
+      src={photography.src}
+      alt='Photography portfolio'
+      width={24}
+      height={24}
+    />
+  </Social>
+</Flex>
