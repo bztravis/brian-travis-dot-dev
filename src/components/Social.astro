@@ -17,7 +17,12 @@ const { href } = Astro.props;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid transparent;
     border-radius: 0.375rem;
     background: var(--box);
+
+    &:hover {
+      border: 2px solid var(--text-primary);
+    }
   }
 </style>

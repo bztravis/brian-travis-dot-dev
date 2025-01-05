@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import theme from '../styles/theme';
 ---
 
 <!doctype html>
@@ -16,7 +17,7 @@ import '../styles/global.css';
   </body>
 </html>
 
-<style>
+<style define:vars={{ sBreakpoint: theme.breakpoints.s }}>`
   html {
     width: 100%;
     height: 100%;
@@ -24,8 +25,12 @@ import '../styles/global.css';
 
   body {
     width: 100%;
-    max-width: 640px;
-    margin: 64px auto;
+    max-width: var(--sBreakpoint);
+    margin: 2rem auto;
     padding: 0 16px;
-  }
+
+    @media screen and (min-width: 640px) {
+      margin: 4rem auto;
+    }
+  }`
 </style>
