@@ -9,13 +9,21 @@ type Props = {
     | 'space-between'
     | 'space-around'
     | 'space-evenly';
+  align?:
+    | 'center'
+    | 'flex-start'
+    | 'flex-end'
+    | 'stretch'
+    | 'baseline'
+    | 'normal';
 };
 
 const {
   gapRem = 0,
   direction = 'column',
   justify = 'flex-start',
-} = Astro.props;
+  align = 'normal',
+}: Props = Astro.props;
 ---
 
 <div
@@ -24,6 +32,7 @@ const {
     flexDirection: direction,
     gap: `${gapRem}rem`,
     justifyContent: justify,
+    alignItems: align,
   }}
 >
   <slot />
