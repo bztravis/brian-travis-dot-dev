@@ -3,12 +3,18 @@ import Flex from './Flex.astro';
 ---
 
 <header>
-  <Flex direction='row' justify='space-between'>
+  <Flex direction='row' justify='space-between' align='center'>
     <Flex gapRem={0.25}>
       <h1>Brian Travis</h1>
       <h3>Frontend engineering @ Ramp</h3>
     </Flex>
 
-    <img src='/images/avatar.png' alt='avatar' width='54' height='54' />
+    <img
+      src='/images/avatar.png'
+      alt='avatar'
+      width='54'
+      height='54'
+      style={{ borderRadius: '100%' }}
+    />
   </Flex>
 </header>
