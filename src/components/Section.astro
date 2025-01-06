@@ -1,0 +1,14 @@
+---
+import Flex from './Flex.astro';
+
+type Props = {
+  title: string;
+};
+
+const { title } = Astro.props;
+---
+
+<Flex gapRem={1}>
+  <h2>{title}</h2>
+  <slot />
+</Flex>

@@ -3,7 +3,12 @@ import Header from '../components/Header.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import IndexLayout from '../layouts/IndexLayout.astro';
 import SocialLinks from '../components/SocialLinks.astro';
+import Section from '../components/Section.astro';
 ---
+
+<head>
+  <title>brian travis dot dev</title>
+</head>
 
 <BaseLayout>
   <IndexLayout>
@@ -12,5 +17,17 @@ import SocialLinks from '../components/SocialLinks.astro';
     <p>Hello world!</p>
 
     <SocialLinks />
+
+    <Section title='Projects'>
+      <p>Projects</p>
+    </Section>
+
+    <Section title='Work'>
+      <p>Work</p>
+    </Section>
+
+    <Section title='Writing'>
+      <p>Writing</p>
+    </Section>
   </IndexLayout>
 </BaseLayout>
