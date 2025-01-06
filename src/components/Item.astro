@@ -1,0 +1,58 @@
+---
+import Flex from './Flex.astro';
+import type {} from 'astro';
+
+type Props = {
+  href: string;
+  openNewTab?: boolean;
+};
+
+const { href, openNewTab = false } = Astro.props;
+---
+
+<a
+  class='Item_container'
+  href={href}
+  target={openNewTab ? '_blank' : undefined}
+>
+  <Flex direction='row' gapRem={0.5}>
+    <slot name='avatar' />
+
+    <div class='Item_responsiveGrid'>
+      <slot name='title' />
+      <slot name='description' />
+    </div>
+  </Flex>
+
+  <slot name='date' />
+</a>
+
+<style>
+  .Item_container {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid transparent;
+    border-radius: 0.375rem;
+    background: var(--box);
+    text-decoration: none;
+    transition: border 0.1s;
+
+    &:hover {
+      border: 2px solid var(--text-primary);
+    }
+  }
+
+  .Item_responsiveGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+
+    @media screen and (min-width: 640px) {
+      grid-template-columns: auto auto;
+      gap: 0.5rem;
+    }
+  }
+</style>

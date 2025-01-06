@@ -4,6 +4,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import IndexLayout from '../layouts/IndexLayout.astro';
 import SocialLinks from '../components/SocialLinks.astro';
 import Section from '../components/Section.astro';
+import Flex from '../components/Flex.astro';
+import Item from '../components/Item.astro';
+
+import ramp from '../assets/ramp.svg';
+import tour from '../assets/tour.svg';
 ---
 
 <head>
@@ -14,20 +19,53 @@ import Section from '../components/Section.astro';
   <IndexLayout>
     <Header />
 
-    <p>Hello world!</p>
-
     <SocialLinks />
 
     <Section title='Projects'>
-      <p>Projects</p>
+      <p>Coming soon...</p>
     </Section>
 
     <Section title='Work'>
-      <p>Work</p>
+      <Item href='https://ramp.com'>
+        <img src={ramp.src} alt='ramp' width='24' height='24' slot='avatar' />
+        <p slot='title'><b>Ramp</b></p>
+        <h3 slot='description'>Frontend engineering</h3>
+        <h3 slot='date'>2024</h3>
+      </Item>
+
+      <Item href='https://usetour.com'>
+        <img
+          src={tour.src}
+          alt='tour.video'
+          width='24'
+          height='24'
+          slot='avatar'
+        />
+        <p slot='title'><b>Tour.video (YC S21)</b></p>
+        <h3 slot='description'>Engineering, product</h3>
+        <h3 slot='date'>2023</h3>
+      </Item>
     </Section>
 
     <Section title='Writing'>
-      <p>Writing</p>
+      <Flex gapRem={0.25}>
+        <Item href='https://google.com'>
+          <p slot='title'>Hello world</p>
+          <h3 slot='date'>2025</h3>
+        </Item>
+        <Item href='https://google.com'>
+          <p slot='title'>Hello world</p>
+          <h3 slot='date'>2025</h3>
+        </Item>
+        <Item href='https://google.com'>
+          <p slot='title'>Hello world</p>
+          <h3 slot='date'>2025</h3>
+        </Item>
+        <Item href='https://google.com'>
+          <p slot='title'>Hello world</p>
+          <h3 slot='date'>2025</h3>
+        </Item>
+      </Flex>
     </Section>
   </IndexLayout>
 </BaseLayout>

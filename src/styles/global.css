@@ -21,6 +21,9 @@
   --text-primary: #2d3440;
   --text-secondary: #667080;
   --box: #f0f2f5;
+
+  --font-weight-regular: 400;
+  --font-weight-bold: 600;
 }
 
 h1,
@@ -30,12 +33,13 @@ h4,
 h5 h6,
 p {
   margin: 0;
+  color: var(--text-primary);
 }
 
 h1,
 h2 {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
   letter-spacing: -0.5px;
   color: var(--text-primary);
 }
@@ -43,7 +47,14 @@ h2 {
 h3,
 p {
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: var(--font-weight-regular);
   letter-spacing: -0.25px;
+}
+
+h3 {
   color: var(--text-secondary);
+}
+
+b {
+  font-weight: var(--font-weight-bold);
 }

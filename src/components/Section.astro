@@ -10,5 +10,7 @@ const { title } = Astro.props;
 
 <Flex gapRem={1}>
   <h2>{title}</h2>
-  <slot />
+  <Flex gapRem={0.25}>
+    <slot />
+  </Flex>
 </Flex>
