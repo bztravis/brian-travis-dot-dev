@@ -16,6 +16,8 @@ type Props = {
     | 'stretch'
     | 'baseline'
     | 'normal';
+  paddingRem?: number;
+  grow?: number;
 };
 
 const {
@@ -23,16 +25,20 @@ const {
   direction = 'column',
   justify = 'flex-start',
   align = 'normal',
+  paddingRem = 0,
+  grow = 0,
 }: Props = Astro.props;
 ---
 
 <div
   style={{
+    padding: `${paddingRem}rem`,
     display: 'flex',
     flexDirection: direction,
     gap: `${gapRem}rem`,
     justifyContent: justify,
     alignItems: align,
+    flexGrow: grow,
   }}
 >
   <slot />

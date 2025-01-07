@@ -6,9 +6,11 @@ import SocialLinks from '../components/SocialLinks.astro';
 import Section from '../components/Section.astro';
 import Flex from '../components/Flex.astro';
 import Item from '../components/Item.astro';
+import Project from '../components/Project.astro';
 
 import ramp from '../assets/ramp.svg';
 import tour from '../assets/tour.svg';
+import meetingbrew from '../../public/meetingbrew.png';
 ---
 
 <head>
@@ -22,9 +24,26 @@ import tour from '../assets/tour.svg';
     <SocialLinks />
 
     <Section title='Projects'>
-      <SocialLinks />
-      <SocialLinks />
-      <SocialLinks />
+      <div class='Project_container'>
+        <Project
+          href='https://meetingbrew.com'
+          imgSrc={meetingbrew.src}
+          title='Meetingbrew.com'
+          description='7k monthly users'
+        />
+        <Project
+          href='https://meetingbrew.com'
+          imgSrc={meetingbrew.src}
+          title='Meetingbrew.com'
+          description='7k monthly users'
+        />
+        <Project
+          href='https://meetingbrew.com'
+          imgSrc={meetingbrew.src}
+          title='Meetingbrew.com'
+          description='7k monthly users'
+        />
+      </div>
     </Section>
 
     <Section title='Work'>
@@ -77,5 +96,12 @@ import tour from '../assets/tour.svg';
 <style>
   .Index_hidden {
     display: none;
+  }
+
+  .Project_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.25rem;
+    row-gap: 1rem;
   }
 </style>

@@ -1,0 +1,22 @@
+---
+type Props = {
+  href: string;
+  openNewTab?: boolean;
+};
+
+const { href, openNewTab = false } = Astro.props;
+---
+
+<a
+  class='LinkContainer_container'
+  href={href}
+  target={openNewTab ? '_blank' : undefined}
+>
+  <slot />
+</a>
+
+<style>
+  .LinkContainer_container {
+    text-decoration: none;
+  }
+</style>

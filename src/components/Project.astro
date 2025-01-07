@@ -1,0 +1,53 @@
+---
+import Flex from './Flex.astro';
+import SquareTopDown from '../assets/icons/Square Top Down.svg';
+import LinkContainer from './LinkContainer.astro';
+
+type Props = {
+  href: string;
+  imgSrc: string;
+  title: string;
+  description: string;
+};
+
+const { href, imgSrc, title, description } = Astro.props;
+---
+
+<div class='Project_container'>
+  <LinkContainer href={href} openNewTab={true}>
+    <Flex gapRem={0.25}>
+      <img class='Project_thumbnail' src={imgSrc} alt={title} />
+
+      <Flex direction='row' gapRem={0.25} align='center'>
+        <Flex gapRem={0.25} paddingRem={0.25} grow={1}>
+          <p><b>{title}</b></p>
+
+          <h3>{description}</h3>
+        </Flex>
+
+        <div class='Project_marginRight'>
+          <img src={SquareTopDown.src} />
+        </div>
+      </Flex>
+    </Flex>
+  </LinkContainer>
+</div>
+
+<style>
+  .Project_thumbnail {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    transition: border-color 0.2s;
+  }
+
+  .Project_container:hover .Project_thumbnail {
+    border-width: 2px;
+    border-color: var(--text-primary);
+  }
+
+  .Project_marginRight {
+    margin-right: 0.75rem;
+  }
+</style>
