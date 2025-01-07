@@ -18,14 +18,14 @@ const { href, imgSrc, title, description } = Astro.props;
     <Flex gapRem={0.25}>
       <img class='Project_thumbnail' src={imgSrc} alt={title} />
 
-      <Flex direction='row' gapRem={0.75} align='center'>
+      <Flex direction='row' gapRem={0.75}>
         <Flex gapRem={0.25} paddingRem={0.25} grow={1}>
           <p><b>{title}</b></p>
 
           <h3>{description}</h3>
         </Flex>
 
-        <div class='Project_marginRight'>
+        <div class='Project_marginTopRight'>
           <img src={SquareTopDown.src} />
         </div>
       </Flex>
@@ -47,7 +47,7 @@ const { href, imgSrc, title, description } = Astro.props;
     border-color: var(--text-primary);
   }
 
-  .Project_marginRight {
-    margin-right: 0.75rem;
+  .Project_marginTopRight {
+    margin: 0.5rem 0.5rem 0 0;
   }
 </style>

@@ -12,6 +12,9 @@ import ramp from '../assets/ramp.svg';
 import tour from '../assets/tour.svg';
 import meetingbrew from '../../public/images/meetingbrew.png';
 import slides from '../../public/images/slides.png';
+import gifgrams from '../../public/images/gifgrams.png';
+import codefy from '../../public/images/codefy.png';
+import mhackslive from '../../public/images/mhackslive.png';
 ---
 
 <head>
@@ -20,9 +23,11 @@ import slides from '../../public/images/slides.png';
 
 <BaseLayout>
   <IndexLayout>
-    <Header />
+    <Flex gapRem={1}>
+      <Header />
 
-    <SocialLinks />
+      <SocialLinks />
+    </Flex>
 
     <Section title='Projects'>
       <div class='Project_container'>
@@ -35,8 +40,26 @@ import slides from '../../public/images/slides.png';
         <Project
           href='https://meetingbrew.com'
           imgSrc={meetingbrew.src}
-          title='Meetingbrew.com'
+          title='MeetingBrew.com'
           description='7k monthly users'
+        />
+        <Project
+          href='https://gifgrams.com'
+          imgSrc={gifgrams.src}
+          title='GifGrams.com'
+          description='Send free e-cards with Tenor gifs'
+        />
+        <Project
+          href='https://codefy.ai'
+          imgSrc={codefy.src}
+          title='Codefy.ai'
+          description='Gen AI coding tools'
+        />
+        <Project
+          href='https://live.mhacks.org'
+          imgSrc={mhackslive.src}
+          title='MHacks Live'
+          description='Weekend-of hackathon site'
         />
       </div>
     </Section>
@@ -100,7 +123,7 @@ import slides from '../../public/images/slides.png';
     row-gap: 1rem;
 
     @media screen and (min-width: 704px) {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
     }
   }
 </style>
