@@ -49,25 +49,33 @@ import tour from '../assets/tour.svg';
       </Item>
     </Section>
 
-    <Section title='Writing'>
-      <Flex gapRem={0.25}>
-        <Item href='https://google.com'>
-          <p slot='title'>Hello world</p>
-          <h3 slot='date'>2025</h3>
-        </Item>
-        <Item href='https://google.com'>
-          <p slot='title'>Hello world</p>
-          <h3 slot='date'>2025</h3>
-        </Item>
-        <Item href='https://google.com'>
-          <p slot='title'>Hello world</p>
-          <h3 slot='date'>2025</h3>
-        </Item>
-        <Item href='https://google.com'>
-          <p slot='title'>Hello world</p>
-          <h3 slot='date'>2025</h3>
-        </Item>
-      </Flex>
-    </Section>
+    <div class='Index_hidden'>
+      <Section title='Writing'>
+        <Flex gapRem={0.25}>
+          <Item href='https://google.com'>
+            <p slot='title'>Hello world</p>
+            <h3 slot='date'>2025</h3>
+          </Item>
+          <Item href='https://google.com'>
+            <p slot='title'>Hello world</p>
+            <h3 slot='date'>2025</h3>
+          </Item>
+          <Item href='https://google.com'>
+            <p slot='title'>Hello world</p>
+            <h3 slot='date'>2025</h3>
+          </Item>
+          <Item href='https://google.com'>
+            <p slot='title'>Hello world</p>
+            <h3 slot='date'>2025</h3>
+          </Item>
+        </Flex>
+      </Section>
+    </div>
   </IndexLayout>
 </BaseLayout>
+
+<style>
+  .Index_hidden {
+    display: none;
+  }
+</style>
