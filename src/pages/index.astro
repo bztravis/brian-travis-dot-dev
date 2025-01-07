@@ -10,7 +10,8 @@ import Project from '../components/Project.astro';
 
 import ramp from '../assets/ramp.svg';
 import tour from '../assets/tour.svg';
-import meetingbrew from '../../public/meetingbrew.png';
+import meetingbrew from '../../public/images/meetingbrew.png';
+import slides from '../../public/images/slides.png';
 ---
 
 <head>
@@ -26,16 +27,10 @@ import meetingbrew from '../../public/meetingbrew.png';
     <Section title='Projects'>
       <div class='Project_container'>
         <Project
-          href='https://meetingbrew.com'
-          imgSrc={meetingbrew.src}
-          title='Meetingbrew.com'
-          description='7k monthly users'
-        />
-        <Project
-          href='https://meetingbrew.com'
-          imgSrc={meetingbrew.src}
-          title='Meetingbrew.com'
-          description='7k monthly users'
+          href='https://www.figma.com/@briantravis'
+          imgSrc={slides.src}
+          title='Convex Slides Theme (Figma Slides)'
+          description='77 likes, 363 users'
         />
         <Project
           href='https://meetingbrew.com'
@@ -100,8 +95,12 @@ import meetingbrew from '../../public/meetingbrew.png';
 
   .Project_container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     column-gap: 0.25rem;
     row-gap: 1rem;
+
+    @media screen and (min-width: 704px) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 </style>
