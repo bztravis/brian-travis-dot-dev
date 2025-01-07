@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Satoshi';
-  src: url('/fonts/Satoshi.ttf') format('truetype');
+  src: url('/fonts/Satoshi-Regular.otf') format('opentype');
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Satoshi';
-  src: url('/fonts/Satoshi-Italic.ttf') format('truetype');
-  font-style: italic;
+  src: url('/fonts/Satoshi-Bold.otf') format('opentype');
+  font-weight: bold;
 }
 
 * {
