@@ -16,56 +16,68 @@ import tour from '../assets/tour.svg';
 </head>
 
 <BaseLayout>
-  <IndexLayout>
-    <Header />
+  <Flex gapRem={4}>
+    <IndexLayout>
+      <Header />
 
-    <SocialLinks />
+      <SocialLinks />
 
-    <Section title='Projects'>
-      <p>Coming soon...</p>
-    </Section>
+      <Section title='Projects'>
+        <SocialLinks />
+        <SocialLinks />
+        <SocialLinks />
+      </Section>
 
-    <Section title='Work'>
-      <Item href='https://ramp.com' openNewTab={true}>
-        <img src={ramp.src} alt='ramp' width='24' height='24' slot='avatar' />
-        <p slot='title'><b>Ramp</b></p>
-        <h3 slot='description'>Frontend engineering</h3>
-        <h3 slot='date'>2024</h3>
-      </Item>
-
-      <Item href='https://usetour.com' openNewTab={true}>
-        <img
-          src={tour.src}
-          alt='tour.video'
-          width='24'
-          height='24'
-          slot='avatar'
-        />
-        <p slot='title'><b>Tour.video (YC S21)</b></p>
-        <h3 slot='description'>Engineering, product</h3>
-        <h3 slot='date'>2023</h3>
-      </Item>
-    </Section>
-
-    <Section title='Writing'>
-      <Flex gapRem={0.25}>
-        <Item href='https://google.com'>
-          <p slot='title'>Hello world</p>
-          <h3 slot='date'>2025</h3>
+      <Section title='Work'>
+        <Item href='https://ramp.com' openNewTab={true}>
+          <img src={ramp.src} alt='ramp' width='24' height='24' slot='avatar' />
+          <p slot='title'><b>Ramp</b></p>
+          <h3 slot='description'>Frontend engineering</h3>
+          <h3 slot='date'>2024</h3>
         </Item>
-        <Item href='https://google.com'>
-          <p slot='title'>Hello world</p>
-          <h3 slot='date'>2025</h3>
+
+        <Item href='https://usetour.com' openNewTab={true}>
+          <img
+            src={tour.src}
+            alt='tour.video'
+            width='24'
+            height='24'
+            slot='avatar'
+          />
+          <p slot='title'><b>Tour.video (YC S21)</b></p>
+          <h3 slot='description'>Engineering, product</h3>
+          <h3 slot='date'>2023</h3>
         </Item>
-        <Item href='https://google.com'>
-          <p slot='title'>Hello world</p>
-          <h3 slot='date'>2025</h3>
-        </Item>
-        <Item href='https://google.com'>
-          <p slot='title'>Hello world</p>
-          <h3 slot='date'>2025</h3>
-        </Item>
-      </Flex>
-    </Section>
-  </IndexLayout>
+      </Section>
+
+      <Section title='Writing'>
+        <Flex gapRem={0.25}>
+          <Item href='https://google.com'>
+            <p slot='title'>Hello world</p>
+            <h3 slot='date'>2025</h3>
+          </Item>
+          <Item href='https://google.com'>
+            <p slot='title'>Hello world</p>
+            <h3 slot='date'>2025</h3>
+          </Item>
+          <Item href='https://google.com'>
+            <p slot='title'>Hello world</p>
+            <h3 slot='date'>2025</h3>
+          </Item>
+          <Item href='https://google.com'>
+            <p slot='title'>Hello world</p>
+            <h3 slot='date'>2025</h3>
+          </Item>
+        </Flex>
+      </Section>
+    </IndexLayout>
+
+    <h6 class='indx_copyright'>Copyright &copy 2025</h6>
+  </Flex>
 </BaseLayout>
+
+<style>
+  .indx_copyright {
+    margin: 0 auto -2rem auto;
+  }
+</style>
