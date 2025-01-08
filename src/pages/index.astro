@@ -15,6 +15,7 @@ import slides from '../../public/images/slides.png';
 import gifgrams from '../../public/images/gifgrams.png';
 import codefy from '../../public/images/codefy.png';
 import mhackslive from '../../public/images/mhackslive.png';
+import focusedyoutube from '../../public/images/focusedyoutube.png';
 ---
 
 <head>
@@ -60,6 +61,12 @@ import mhackslive from '../../public/images/mhackslive.png';
           imgSrc={mhackslive.src}
           title='MHacks Live'
           description='Weekend-of hackathon site'
+        />
+        <Project
+          href='https://chromewebstore.google.com/detail/focused-youtube/edjlbgpnodgccmmglnbiokamhgepmecj?hl=en'
+          imgSrc={focusedyoutube.src}
+          title='Focused YouTube'
+          description='Chrome extension for distraction-free YouTube'
         />
       </div>
     </Section>
@@ -120,7 +127,7 @@ import mhackslive from '../../public/images/mhackslive.png';
     display: grid;
     grid-template-columns: 1fr;
     column-gap: 0.25rem;
-    row-gap: 1rem;
+    row-gap: 1.5rem;
 
     @media screen and (min-width: 704px) {
       grid-template-columns: 1fr 1fr 1fr;
