@@ -1,0 +1,19 @@
+---
+import BaseLayout from './BaseLayout.astro'
+import { format } from 'date-fns'
+
+const { frontmatter } = Astro.props
+---
+
+<BaseLayout pageTitle={frontmatter.title}>
+  <h1>{frontmatter.title}</h1>
+  <p>
+    {format(frontmatter.pubDate, 'MMMM dd, yyyy')}
+  </p>
+
+  <br />
+
+  <slot />
+</BaseLayout>
+
+<style></style>

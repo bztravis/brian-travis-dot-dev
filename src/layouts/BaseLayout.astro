@@ -1,6 +1,8 @@
 ---
 import '../styles/global.css';
 import theme from '../styles/theme';
+
+const { pageTitle } = Astro.props;
 ---
 
 <!doctype html>
@@ -10,6 +12,7 @@ import theme from '../styles/theme';
     <meta name='viewport' content='width=device-width' />
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='generator' content={Astro.generator} />
+    <title>{pageTitle}</title>
   </head>
   <body>
     <slot />

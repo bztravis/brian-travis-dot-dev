@@ -1,25 +1,25 @@
 ---
-import Header from '../components/Header.astro';
-import BaseLayout from '../layouts/BaseLayout.astro';
-import IndexLayout from '../layouts/IndexLayout.astro';
-import SocialLinks from '../components/SocialLinks.astro';
-import Section from '../components/Section.astro';
-import Flex from '../components/Flex.astro';
-import Item from '../components/Item.astro';
-import Project from '../components/Project.astro';
+import Header from '../components/Header.astro'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import IndexLayout from '../layouts/IndexLayout.astro'
+import SocialLinks from '../components/SocialLinks.astro'
+import Section from '../components/Section.astro'
+import Flex from '../components/Flex.astro'
+import Item from '../components/Item.astro'
+import Project from '../components/Project.astro'
 
-import ramp from '../assets/ramp.svg';
-import tour from '../assets/tour.svg';
-import meetingbrew from '../../public/images/meetingbrew.png';
-import slides from '../../public/images/slides.png';
-import gifgrams from '../../public/images/gifgrams.png';
-import codefy from '../../public/images/codefy.png';
-import mhackslive from '../../public/images/mhackslive.png';
-import focusedyoutube from '../../public/images/focusedyoutube.png';
+import ramp from '../assets/ramp.svg'
+import tour from '../assets/tour.svg'
+import meetingbrew from '../../public/images/meetingbrew.png'
+import slides from '../../public/images/slides.png'
+import gifgrams from '../../public/images/gifgrams.png'
+import codefy from '../../public/images/codefy.png'
+import mhackslive from '../../public/images/mhackslive.png'
+import focusedyoutube from '../../public/images/focusedyoutube.png'
 ---
 
 <head>
-  <title>brian travis dot dev</title>
+  <title>brian travis [dot] dev</title>
 </head>
 
 <BaseLayout>
@@ -36,7 +36,7 @@ import focusedyoutube from '../../public/images/focusedyoutube.png';
           href='https://www.figma.com/@briantravis'
           imgSrc={slides.src}
           title='Convex Slides Theme (Figma Slides)'
-          description='174 likes, 849 users'
+          description='320 likes, 1.5k users'
         />
         <Project
           href='https://meetingbrew.com'
@@ -76,7 +76,7 @@ import focusedyoutube from '../../public/images/focusedyoutube.png';
         <img src={ramp.src} alt='ramp' width='24' height='24' slot='avatar' />
         <p slot='title'><b>Ramp</b></p>
         <h3 slot='description'>Frontend engineering</h3>
-        <h3 slot='date'>2024</h3>
+        <h3 slot='date'>2024 - 2025</h3>
       </Item>
 
       <Item href='https://usetour.com' openNewTab={true}>
@@ -90,6 +90,14 @@ import focusedyoutube from '../../public/images/focusedyoutube.png';
         <p slot='title'><b>Tour.video (YC S21)</b></p>
         <h3 slot='description'>Engineering, product</h3>
         <h3 slot='date'>2023</h3>
+      </Item>
+    </Section>
+
+    <Section title='Writing'>
+      <Item href='/essays/successful-teams'>
+        <p slot='title'><b>Successful Teams</b></p>
+        <h3 slot='description'>Notes and observations</h3>
+        <h3 slot='date'>2025</h3>
       </Item>
     </Section>
 
