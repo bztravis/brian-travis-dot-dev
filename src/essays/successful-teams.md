@@ -5,13 +5,7 @@ description: 'Notes and observations'
 author: 'Brian Travis'
 ---
 
-## To listen:
-
-- Garry Tan: Should You Be the CEO?https://www.youtube.com/watch?v=Xa6zsbXGQ5M
-- Sam Altman: Team and Executionhttps://youtu.be/CVfnkM44Urs?si=XncQNvk7cj2HdWy2
-
-Properties of Successful Teams
-Some Parts Adapted from Gary Tan’s “Successful billion dollar startups build long-lived teams that beat all competition” (https://www.youtube.com/watch?v=xy4WdRfDyTs)
+### Properties of Successful Teams
 
 - Build team for the long haul
 - Team risk is real- do the people feel like they know each other? Do they trust that their teammates have the fundamental skills necessary to succeed?
@@ -48,8 +42,7 @@ Some Parts Adapted from Gary Tan’s “Successful billion dollar startups build
   - The talent bar is high enough that there’s always a shortage of people relative to work needed to be done on other teams
 - Price’s Law is par for the course. This law states that in any organization, half of the work is done by the square root of the total number of contributors. Is your organization above or below the curve?
 
-How to Manage and Delegate
-Adapted from Garry Tan’s video essay “Micromanagement is Toxic: Delegation is the Cure”
+### How to Manage and Delegate
 
 - What should you be doing? For managers: the things that nobody else on the team can do.
 - Steps:
@@ -72,8 +65,7 @@ Adapted from Garry Tan’s video essay “Micromanagement is Toxic: Delegation i
       - Are there things we do and don’t want to do?
 - Remember, if you transition from being an individual contributor to being a manger, you are no longer directly responsible for the product. You are now responsible for the people who are responsible for the product.
 
-Lessons from Stripe on a Culture of Excellence
-Adapted from Lenny’s Podcast episode “Building a culture of excellence with David Singleton (CTO of Stripe)” (https://www.youtube.com/watch?v=F0_IKKY3HCk)
+### Lessons from Stripe on a Culture of Excellence
 
 - Hiring:
   - Understand candidates deeply, frame the hiring process as an exploration of whether working on the team makes sense for them
@@ -89,8 +81,7 @@ Adapted from Lenny’s Podcast episode “Building a culture of excellence with 
     - Stripe: Be meticulous in your craft.
     - Stripe: Customers first, understand your user. “Friction logging” is where you take a customer type which you know well, and you use the product from start to finish in their shoes. Take a note of any point of friction you encounter, and also highlight any successes
 
-Rules for Building a Winning Team
-Adapted from Patrick Bet-David’s “24 Ways to Build a Great Company Culture” (https://youtu.be/PW-ivdroycc?si=SmXjGfCye6JfZK-n)
+### Rules for Building a Winning Team
 
 - People don’t want to work with leaders who view them as “one of their workers”. We are all want to work with leaders who care about us and who we trust. Great leaders don’t go one or two layers deep in their relationship with their teammates as they would with any other acquaintance, they go 4, 5, or 6 layers deep.
   - The single most important factor in building this relationship is the amount of one-on-one time spent with your teammate, where you are giving them your undivided attention.
@@ -109,3 +100,12 @@ Adapted from Patrick Bet-David’s “24 Ways to Build a Great Company Culture�
 - Have high standards and mutual accountability. Anyone can call out any one else (positively or negatively). This creates a culture of honesty and transparency, and allows people not in leadership positions to discover that they are leaders.
 - “Teach your teammates your secrets so well that they could leave and become your competitor. But treat them so well that they don’t want to.”
 - Same person, different culture/environment/teammates/role => different performance and enthusiasm.
+
+### Includes some points from the following talks:
+
+- Gary Tan's “Successful billion dollar startups build long-lived teams that beat all competition” (https://www.youtube.com/watch?v=xy4WdRfDyTs)
+- Garry Tan's video essay “Micromanagement is Toxic: Delegation is the Cure”
+- Lenny’s Podcast episode “Building a culture of excellence with David Singleton (CTO of Stripe)” (https://www.youtube.com/watch?v=F0_IKKY3HCk)
+- Patrick Bet-David’s “24 Ways to Build a Great Company Culture” (https://youtu.be/PW-ivdroycc?si=SmXjGfCye6JfZK-n)
+- Garry Tan: Should You Be the CEO? (https://www.youtube.com/watch?v=Xa6zsbXGQ5M)
+- Sam Altman: Team and Execution (https://youtu.be/CVfnkM44Urs?si=XncQNvk7cj2HdWy2)
