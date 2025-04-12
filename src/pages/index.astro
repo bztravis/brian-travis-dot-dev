@@ -16,6 +16,7 @@ import gifgrams from '../../public/images/gifgrams.png'
 import codefy from '../../public/images/codefy.png'
 import mhackslive from '../../public/images/mhackslive.png'
 import focusedyoutube from '../../public/images/focusedyoutube.png'
+import robotReveal from '../../public/images/robotreveal.jpg'
 ---
 
 <head>
@@ -29,6 +30,36 @@ import focusedyoutube from '../../public/images/focusedyoutube.png'
 
       <SocialLinks />
     </Flex>
+
+    <Section title='Writing'>
+      <Item href='/essays/successful-teams'>
+        <p slot='title'><b>Successful Teams</b></p>
+        <h3 slot='description'>Notes and observations</h3>
+        <h3 slot='date'>2024</h3>
+      </Item>
+    </Section>
+
+    <Section title='Work'>
+      <Item href='https://ramp.com' openNewTab={true}>
+        <img src={ramp.src} alt='ramp' width='24' height='24' slot='avatar' />
+        <p slot='title'><b>Ramp</b></p>
+        <h3 slot='description'>Frontend engineering</h3>
+        <h3 slot='date'>2024 - 2025</h3>
+      </Item>
+
+      <Item href='https://usetour.com' openNewTab={true}>
+        <img
+          src={tour.src}
+          alt='tour.video'
+          width='24'
+          height='24'
+          slot='avatar'
+        />
+        <p slot='title'><b>Tour.video (YC S21)</b></p>
+        <h3 slot='description'>Engineering, product</h3>
+        <h3 slot='date'>2023</h3>
+      </Item>
+    </Section>
 
     <Section title='Projects'>
       <div class='Project_container'>
@@ -68,61 +99,14 @@ import focusedyoutube from '../../public/images/focusedyoutube.png'
           title='Focused YouTube'
           description='Chrome extension for distraction-free YouTube'
         />
+        <Project
+          href='https://www.youtube.com/watch?v=IN1iTrB4rRw'
+          imgSrc={robotReveal.src}
+          title='COMETS 3357 FRC Reveal Video (2022)'
+          description='28K views'
+        />
       </div>
     </Section>
-
-    <Section title='Work'>
-      <Item href='https://ramp.com' openNewTab={true}>
-        <img src={ramp.src} alt='ramp' width='24' height='24' slot='avatar' />
-        <p slot='title'><b>Ramp</b></p>
-        <h3 slot='description'>Frontend engineering</h3>
-        <h3 slot='date'>2024 - 2025</h3>
-      </Item>
-
-      <Item href='https://usetour.com' openNewTab={true}>
-        <img
-          src={tour.src}
-          alt='tour.video'
-          width='24'
-          height='24'
-          slot='avatar'
-        />
-        <p slot='title'><b>Tour.video (YC S21)</b></p>
-        <h3 slot='description'>Engineering, product</h3>
-        <h3 slot='date'>2023</h3>
-      </Item>
-    </Section>
-
-    <Section title='Writing'>
-      <Item href='/essays/successful-teams'>
-        <p slot='title'><b>Successful Teams</b></p>
-        <h3 slot='description'>Notes and observations</h3>
-        <h3 slot='date'>2025</h3>
-      </Item>
-    </Section>
-
-    <div class='Index_hidden'>
-      <Section title='Writing'>
-        <Flex gapRem={0.25}>
-          <Item href='https://google.com'>
-            <p slot='title'>Hello world</p>
-            <h3 slot='date'>2025</h3>
-          </Item>
-          <Item href='https://google.com'>
-            <p slot='title'>Hello world</p>
-            <h3 slot='date'>2025</h3>
-          </Item>
-          <Item href='https://google.com'>
-            <p slot='title'>Hello world</p>
-            <h3 slot='date'>2025</h3>
-          </Item>
-          <Item href='https://google.com'>
-            <p slot='title'>Hello world</p>
-            <h3 slot='date'>2025</h3>
-          </Item>
-        </Flex>
-      </Section>
-    </div>
   </IndexLayout>
 </BaseLayout>
 
